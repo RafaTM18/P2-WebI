@@ -1,0 +1,151 @@
+:root{
+    --bg-head: #006D77;
+    --bg-modal: #FEFEFE
+}
+
+#aviso{
+    text-align: center;
+    margin: 0px;
+    padding: 5px;
+}
+
+#table{
+    width: 100%;
+    overflow-y: auto;
+    margin: 50px 0px;
+    border-collapse: collapse;
+}
+
+td, th {
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+tbody > tr:hover{
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: var(--bg-head);
+    color: white;
+}
+
+#modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 60px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+#conteudo{
+    background-color: var(--bg-modal);
+    margin: 5% auto 15% auto;
+    border: 1px solid #888;
+    width: 60%;
+}
+
+#fecha{
+    display: block;
+    text-align: right;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+#fecha:hover, #fecha:focus {
+  color: red;
+  cursor: pointer;
+}
+
+#painel-img{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid lightgray;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#img-pet{
+    height: 50%;
+    width: 50%;
+    margin: auto;   
+    box-shadow: 0px 0px 10px gray; 
+}
+
+#form{
+    min-width: 300px;
+    width: 70%;
+    margin: 50px auto;
+}
+
+#painel > label{
+    display: block;
+    padding-bottom: 5px;
+}
+
+input[type="text"]:not(.data){
+    width: 100%;
+}
+
+input:not(input[type="file"]), select{
+    padding: 5px;
+    margin-bottom: 15px;
+    border: 1px solid salmon;
+    border-radius: 5px;
+}
+
+input.invalido{
+    background-color: #FFDDDD;
+    border: 2px solid salmon;
+    outline: none;
+}
+
+.data{
+    text-align: center;
+}
+
+form select{
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+}
+
+#div-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px auto 15px auto;
+}
+
+#div-btn button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#div-btn button:hover{
+    opacity: 0.8;
+}
+
+#btn-alt{
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+#btn-del{
+    background-color: rgba(255, 0, 0, 0.5);
+}

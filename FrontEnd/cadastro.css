@@ -1,0 +1,78 @@
+:root{
+    --input-inv: #FFDDDD;
+    --st-padrao: #BBBBBB;
+    --st-finaliz: #04AA6D;
+}
+
+form label{
+    display: block;
+    padding-bottom: 5px;
+}
+
+form input{
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+form input:not(input[type="file"]), select{
+    border: 1px solid salmon;
+    border-radius: 5px;
+}
+
+input.invalido{
+    background-color: var(--input-inv);
+    border: 2px solid salmon;
+    outline: none;
+}
+
+.data{
+    text-align: center;
+}
+
+form select{
+    padding: 5px;
+    margin-bottom: 15px;
+    position: absolute;
+    z-index: 1;
+}
+
+.tab{
+    display: none;
+}
+
+#div-btn{
+    float: right;
+}
+
+#repr-tab{
+    text-align: center;
+    margin-top: 40px;
+}
+
+form button{
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+
+form button:hover{
+    opacity: 0.75;
+}
+
+.tab-step{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--st-padrao);
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.tab-step.ativo{
+    opacity: 1;
+}
+
+.tab-step.finalizado{
+    background-color: var(--st-finaliz);
+}

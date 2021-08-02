@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+:root{
+    --bg-body: #FFDDD2;
+    --bg-header: #F99678;
+    --bg-main: #EDF6F9;
+    --bg-footer: #83C5BE;
+    --bg-select: #83C5BE;
+    --bg-extra: #006D77;
+    --std-shadow: 0px 0px 10px gray;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+body{
+    background-color: var(--bg-body);
+    min-height: 100vh;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "cabecalho cabecalho cabecalho"
+                         ". principal ."
+                         "rodape rodape rodape";
+    gap: 20px 0px;
+    margin: auto auto;
+}
+
+header{
+    grid-area: cabecalho;
+    background-color: var(--bg-header);
+    box-shadow: var(--std-shadow);
+    text-align: center;
+}
+
+header > img{
+    max-height: 128px;
+    vertical-align: bottom;
+}
+
+h1{
+    display: inline-block;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5em;
+    font-weight: bold;
+    margin: 0px;
+    padding: 16px 15px;
+}
+
+.icon-nav {
+    width: 100%;
+    background-color: var(--bg-extra);
+    overflow: auto;
+}
+  
+.icon-nav a {
+    text-align: center;
+    width: 33.333%;
+    float: left;
+    padding: 12px 0px;
+    transition: all 0.3s ease;
+}
+
+.icon-nav a:hover {
+    background-color: var(--bg-select);
+}
+
+svg{
+    height: 48px;
+    margin: 0 2em;
+}
+
+.atual {
+    background-color: var(--bg-select);
+}
+
+main{
+    grid-area: principal;
+    background-color: var(--bg-main);
+    box-shadow: var(--std-shadow);
+    display: flex;
+    justify-content: center;
+}
+
+main > div{
+    width: 80%;
+    text-align: justify;
+    margin: auto;
+}
+
+footer{
+    grid-area: rodape;
+    background-color: var(--bg-footer);
+    box-shadow: var(--std-shadow);
+    text-align: center;
+    padding: 15px;
+}
+
+footer > p{
+    margin: 0px;
+}
+

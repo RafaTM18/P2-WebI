@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cadastro.css">
+    <link rel="icon" href="assets/PET-LOVE-LOGO.ico">
+    <title>Pet Love - Cadastro</title>
+</head>
+<body>
+    <header>
+        <img src="assets/PET LOVE LOGO.png" alt="Logo PetLove">
+        <h1>Pet Love</h1>
+        <nav>
+            <div class="icon-nav">
+                <a href="./index.html">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home" class="svg-inline--fa fa-home fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="white" d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path></svg>
+                </a>
+                <a class="atual" href="./cadastro.html">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="paw" class="svg-inline--fa fa-paw fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M256 224c-79.41 0-192 122.76-192 200.25 0 34.9 26.81 55.75 71.74 55.75 48.84 0 81.09-25.08 120.26-25.08 39.51 0 71.85 25.08 120.26 25.08 44.93 0 71.74-20.85 71.74-55.75C448 346.76 335.41 224 256 224zm-147.28-12.61c-10.4-34.65-42.44-57.09-71.56-50.13-29.12 6.96-44.29 40.69-33.89 75.34 10.4 34.65 42.44 57.09 71.56 50.13 29.12-6.96 44.29-40.69 33.89-75.34zm84.72-20.78c30.94-8.14 46.42-49.94 34.58-93.36s-46.52-72.01-77.46-63.87-46.42 49.94-34.58 93.36c11.84 43.42 46.53 72.02 77.46 63.87zm281.39-29.34c-29.12-6.96-61.15 15.48-71.56 50.13-10.4 34.65 4.77 68.38 33.89 75.34 29.12 6.96 61.15-15.48 71.56-50.13 10.4-34.65-4.77-68.38-33.89-75.34zm-156.27 29.34c30.94 8.14 65.62-20.45 77.46-63.87 11.84-43.42-3.64-85.21-34.58-93.36s-65.62 20.45-77.46 63.87c-11.84 43.42 3.64 85.22 34.58 93.36z"></path></svg>
+                </a>
+                <a href="./lista.html">
+                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="list-ul" class="svg-inline--fa fa-list-ul fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="white" d="M48 48a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm0 160a48 48 0 1 0 48 48 48 48 0 0 0-48-48zm448 16H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16zm0-320H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16V80a16 16 0 0 0-16-16zm0 160H176a16 16 0 0 0-16 16v32a16 16 0 0 0 16 16h320a16 16 0 0 0 16-16v-32a16 16 0 0 0-16-16z"></path></svg>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <form id="form">
+                <div class="tab">
+                    <h2>Informações do dono:</h2>
+                    <hr>
+                    <div>
+                        <label for="cpf">CPF:</label>
+                        <input type="text" name="cpf" id="cpf" required pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}" title="XXX.XXX.XXX-XX">
+                    </div>
+                    <div>
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" required minlength="3">
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="tab">
+                    <h2>Informações do pet:</h2>
+                    <hr>
+                    <div>
+                        <label for="nomePet">Nome:</label>
+                        <input type="text" name="nomePet" id="nomePet" required minlength="3">
+                    </div>
+                    <div>
+                        <label for="raca">Raça:</label>
+                        <input type="text" name="raca" id="raca" required minlength="3">
+                    </div>
+                    <hr>
+                </div>
+
+                <div class="tab">
+                    <h2>Outras informações do pet:</h2>
+                    <hr>
+                    <div>
+                        <label for="dia">Data de Nascimento:</label>
+                        <input type="text" class="data" name="dia" id="dia" size="1" maxlength="2" placeholder="dd" required>
+                        /
+                        <input type="text" class="data" name="mes" id="mes" size="1" maxlength="2" placeholder="mm" required>
+                        /
+                        <select name="ano" id="ano" size="1" onclick="size=(size!=1)?1:8;" onblur="size = 1"></select>
+                    </div>
+                    <div>
+                        <label for="foto">Foto:</label>
+                        <input type="file" name="foto" id="foto" accept="image/*" required>
+                    </div>
+                    <hr>
+                </div>
+
+                <div id="div-btn">
+                    <button type="button" id="btn-volt">Voltar</button>
+                    <button type="button" id="btn-prox">Próximo</button>
+                </div>
+
+                <div id="repr-tab">
+                    <span class="tab-step"></span>
+                    <span class="tab-step"></span>
+                    <span class="tab-step"></span>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site desenvolvido por Rafael Tamura &copy; 2021</p>
+        <address>r.tamura@ufms.br</address>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+</html>
